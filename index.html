@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20210710kadai</title>
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <h1>たったひとつのシンプルな答えクイズ</h1>
+    <ul class="slider">
+        <li><a href="#"><img src="./imgs/img1.png" alt="image01"></a></li>
+        <li><a href="#"><img src="./imgs/img2.png" alt="image02"></a></li>
+        <li><a href="#"><img src="./imgs/img3.png" alt="image03"></a></li>
+        <li><a href="#"><img src="./imgs/img4.png" alt="image04"></a></li>
+        <li><a href="#"><img src="./imgs/img5.png" alt="image05"></a></li>
+    </ul>
+    <ul class="slider">
+        <li><p class="slider_p">こ</p></li>
+        <li><p class="slider_p">ん</p></li>
+        <li><p class="slider_p">に</p></li>
+        <li><p class="slider_p">ち</p></li>
+        <li><p class="slider_p">は</p></li>
+    </ul>
+    <div>
+        <form id="main">
+            <div class="qArea">
+                <div id="q1-title"></div>
+                <label><input type="text" name="q1-q" placeholder="カタカナ3文字"></label>
+            </div>
+            <div class="qArea">
+                <div id="q2-title"></div>
+                <div class="q2">
+                    <label><input type="radio" name="q2-q" value="a"><span id="q2-a"></span></label>
+                </div>
+                <div class="q2">
+                    <label><input type="radio" name="q2-q" value="b"><span id="q2-b"></span></label>
+                </div>
+                <div class="q2">
+                    <label><input type="radio" name="q2-q" value="c"><span id="q2-c"></span></label>
+                </div>  
+            </div>
+            <div class="qArea">
+                <div id="q3-title"></div>
+                <div class="q3">
+                    <label><input type="radio" name="q3-q" value="a"><span id="q3-a"></span></label>
+                </div>
+                <div class="q3">
+                    <label><input type="radio" name="q3-q" value="b"><span id="q3-b"></span></label>
+                </div>
+                <div class="q3">
+                    <label><input type="radio" name="q3-q" value="c"><span id="q3-c"></span></label>
+                </div>  
+            </div>
+            <div class="qArea">
+                <div id="q4-title"></div>
+                <div class="q4">
+                    <label><input type="radio" name="q4-q" value="a"><span id="q4-a"></span></label>
+                </div>
+                <div class="q4">
+                    <label><input type="radio" name="q4-q" value="b"><span id="q4-b"></span></label>
+                </div>
+                <div class="q4">
+                    <label><input type="radio" name="q4-q" value="c"><span id="q4-c"></span></label>
+                </div>  
+            </div>
+            <div class="qArea">
+                <div id="q5-title"></div>
+                <div class="q5">
+                    <label><input type="checkbox" name="q5-q" value="a"><span id="q5-a"></span></label>
+                </div>
+                <div class="q5">
+                    <label><input type="checkbox" name="q5-q" value="b"><span id="q5-b"></span></label>
+                </div>
+                <div class="q5">
+                    <label><input type="checkbox" name="q5-q" value="c"><span id="q5-c"></span></label>
+                </div>  
+            </div>
+        </form>
+        <div class="resultbtn_reset">
+            <button id="btn" onclick="btnclick()">結果確認</button>
+            <input type="reset" form="main" value="リセット">
+        </div>
+        <div id="result"></div>
+    </div>
+    <div id="css_color">
+        <button id="colorbtn">背景色チェンジ </button>
+    </div>
+
+
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
